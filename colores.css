@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Cormorant+Garamond:wght@300&family=Estonia&family=Fleur+De+Leah&family=Gayathri:wght@100&family=Gowun+Batang&family=Grey+Qo&family=Inconsolata:wght@300&family=Josefin+Slab:wght@500&family=League+Spartan:wght@200;300;400;600&family=Merriweather:wght@300&family=Monsieur+La+Doulaise&family=Montserrat:wght@200;300;600;700&family=Peralta&family=Quicksand&family=Raleway:wght@200;300;400;600&family=Righteous&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+:root {
+    --color-azul-osucuro: #3B4664;
+    --color-negro-claro: #191F32;
+    --color-blanco-oscuro: #EAE3DC;
+    --color-E7E7E7: #E7E7E7;
+    --color-blanco-claro: #f7f4f4;
+    --color-gris-menosOsucuro: #D4CDCD;
+    --color-gris-oscuro: #647298;
+    --color-rojo-claro: #D13F30;
+    --color-naranja-oscuro: #C85401;
+    --color-verde-oscuro: #398189;
+
+    --fuente-spartan: 'League Spartan', sans-serif; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-spartan);
+}
+
+body {
+    background-color: var(--color-azul-osucuro);
+}
+
+@media (max-width: 500px){
+    body {
+        background-color: var(--color-E7E7E7);
+    }
+}

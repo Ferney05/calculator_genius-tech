@@ -1,0 +1,116 @@
+
+@import url(colores.css);
+
+.container_main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.contenedor__grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input {
+    width: 350px;
+    height: 70px;
+    padding: 0 1.2rem;
+
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--color-negro-claro);
+    text-align: right;
+    color: var(--color-blanco-oscuro);
+    font-size: 2rem;
+    user-select: none;
+}
+
+#fondo_div {
+    background-color: var(--color-negro-claro);
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+}
+
+.nums_operations {
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21%;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    justify-content: space-between;
+    gap: 1rem 0.5rem;
+}
+
+.nums_operaciones {
+    background-color: var(--color-blanco-oscuro);
+    color: var(--color-negro-claro);
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco-oscuro);
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nums_operaciones, .delete, .limpiar, .mostrarResultado {
+    font-weight: 600;
+    font-size: 1.1rem;
+    user-select: none;
+}
+
+.limpiar {
+    grid-area: 5 / 1 / 5 / 3;
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco-oscuro);
+
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.mostrarResultado {
+    grid-area: 5 / 3 / 5 / 5;
+    background-color: var(--color-rojo-claro);
+    color: var(--color-blanco-oscuro);
+
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+/* DISEÑO RESPONSIVO */
+
+@media (max-width: 500px){
+    .input {
+        background-color: var(--color-blanco-claro);
+        color: var( --color-negro-claro);
+    }
+
+    .delete, .limpiar {
+        background-color: var(--color-verde-oscuro);
+    }
+
+    .mostrarResultado {
+        background-color: var(--color-naranja-oscuro);
+    }
+    
+}
