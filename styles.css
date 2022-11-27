@@ -118,4 +118,7 @@
         background-color: var(--color-naranja-oscuro);
     }
     
+    .content-calc {
+        margin-top: 5rem;
+    }
 }
