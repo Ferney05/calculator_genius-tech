@@ -1,4 +1,6 @@
 
+import { translateTitleCalc } from "./translateTitle.js"
+
 let dataInputNums = document.querySelector('[data-inputNums]');
 const dataResetButton = document.querySelector('[data-resetButton]');
 const dataResultButton = document.querySelector('[data-resultButton]');
@@ -96,4 +98,11 @@ const asignarOperacion = (op) => {
     operAnterior = operActual;
     operActual = '';
 }
+
+
+// LLAMANDO FUNCIÓN TRANSLATE TITLE
+
+translateTitleCalc();
+
+
 

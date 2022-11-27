@@ -4,42 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Nextven</title>
+    <link rel="shortcut icon" href="icon-gtechBlanco.svg" type="image/x-icon">
+    <title>Genius Tech - Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <main class="container_main">
-        <section class="contenedor__grid">
-            <div class="div_input">
-                <input type="text" class="input" maxlength="25" disabled data-inputNums>
+        <header class="header_iconoLogo">
+            <div class="logo-icon">
+                <a class="logoName" href="index.html"><img src="icon-gtechBlanco.svg" class="icono" alt=""> Genius Tech</a>
             </div>
-    
-            <div class="nums_operations" id="fondo_div">
-                <p class="nums_operaciones" name="numbers">7</p>
-                <p class="nums_operaciones" name="numbers">8</p>
-                <p class="nums_operaciones" name="numbers">9</p>
-                <p class="delete" id="delete">DEL</p>
-                <p class="nums_operaciones" name="numbers">4</p>
-                <p class="nums_operaciones" name="numbers">5</p>
-                <p class="nums_operaciones" name="numbers">6</p>
-                <p class="nums_operaciones" name="operacion">+</p>
-                <p class="nums_operaciones" name="numbers">1</p>
-                <p class="nums_operaciones" name="numbers">2</p>
-                <p class="nums_operaciones" name="numbers">3</p>
-                <p class="nums_operaciones" name="operacion">-</p>
-                <p class="nums_operaciones" name="punto">.</p>
-                <p class="nums_operaciones" name="numbers">0</p>
-                <p class="nums_operaciones" name="operacion">÷</p>
-                <p class="nums_operaciones" name="operacion">x</p>
-                <button class="limpiar" data-resetButton>Reset</button>
-                <button class="mostrarResultado" data-resultButton>=</button>
+
+            <div class="title-proyecto">
+                <h1 class="title" dataTitle>Calculator</h1>
             </div>
+        </header>
+
+        <section class="content-calc">
+            <section class="contenedor__grid">
+                <div class="div_input">
+                    <input type="text" class="input" maxlength="25" disabled data-inputNums>
+                </div>
+        
+                <div class="nums_operations" id="fondo_div">
+                    <p class="nums_operaciones" name="numbers">7</p>
+                    <p class="nums_operaciones" name="numbers">8</p>
+                    <p class="nums_operaciones" name="numbers">9</p>
+                    <p class="delete" id="delete">DEL</p>
+                    <p class="nums_operaciones" name="numbers">4</p>
+                    <p class="nums_operaciones" name="numbers">5</p>
+                    <p class="nums_operaciones" name="numbers">6</p>
+                    <p class="nums_operaciones" name="operacion">+</p>
+                    <p class="nums_operaciones" name="numbers">1</p>
+                    <p class="nums_operaciones" name="numbers">2</p>
+                    <p class="nums_operaciones" name="numbers">3</p>
+                    <p class="nums_operaciones" name="operacion">-</p>
+                    <p class="nums_operaciones" name="punto">.</p>
+                    <p class="nums_operaciones" name="numbers">0</p>
+                    <p class="nums_operaciones" name="operacion">÷</p>
+                    <p class="nums_operaciones" name="operacion">x</p>
+                    <button class="limpiar" data-resetButton>Reset</button>
+                    <button class="mostrarResultado" data-resultButton>=</button>
+                </div>
+            </section>
         </section>
     </main>
 
 
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 
 </body>
 </html>

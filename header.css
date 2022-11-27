@@ -1,0 +1,51 @@
+
+.header_iconoLogo {
+    padding: 1rem 3rem;
+    position: sticky;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoName {
+    display: flex;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-blanco-claro);
+    text-decoration: none;
+}
+
+.icono {
+    width: 60px;
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-blanco-claro);
+    transition: transform 2s ease-out, color 0.7s;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+    .header_iconoLogo {
+        padding: 0.8rem 1rem;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .logoName {
+        font-size: 1.8rem;
+    }
+    
+    .icono {
+        width: 45px;
+    }
+}
